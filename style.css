@@ -1,0 +1,760 @@
+/*
+Theme Name: decolumn
+Theme URI: http://decolumn.com/
+Description: Focus on readability, a clean and awesome Wordpress blank theme. HTML5, CSS3, Responsive Web Design，optimized for mobile browsing (iPhone and iPad). 关注阅读体验，干净简洁的HTML5 WordPress模版框架，自适应屏幕，特别面向iPhone和iPad浏览。
+Version: 0.7
+Author: Lin Zhizhao
+Author URI: http://linz.im
+License: GNU General Public License
+License URI: license.txt
+Tags: custom-menu, sticky-post, white, two-columns
+
+Welcome to contact me if you use this theme: linuximo@gmail.com
+*/
+
+/* Your Style */
+
+body{
+	background-color: ;
+	background-image: url() ; 
+	background-position: ;
+	background-repeat:  ;
+	background: ; 
+}
+
+#header-container{
+	background-color: ; /* a color name (eg. red) or hex code (eg. #ff0000) here */
+	background-image: url() ; /* a color hex code (eg. #ff0000) here */
+	background-position: ;
+	background-repeat:  ; /* select one from: no-repeat repeat-x repeat-y repeat */
+	background: ; /* eg. background:black url(http://linz.im/bg.jpg) repeat-x top left */
+}
+#header-container header.wrapper{
+	background-color: ;
+	background-image: url() ; 
+	background-position: ;
+	background-repeat:  ;
+	background: ; 
+}
+#main-container{
+	color: ; /* a color name (eg. black) or hex code (eg. #000000) here */
+	background-color: ;
+	background-image: url() ; 
+	background-position: ;
+	background-repeat:  ;
+	background: ; 
+}
+#main .main-column{
+	float: ; /* left or right or none */
+	width: ; /* eg. 60% , 600px */
+	background-color: ;
+	background-image: url() ; 
+	background-position: ;
+	background-repeat:  ;
+	background: ; 
+}
+#main .side-column{
+	float: ; 
+	width: ; 
+	background-color: ;
+	background-image: url() ; 
+	background-position: ;
+	background-repeat:  ;
+	background: ; 
+} 
+#footer-container{
+	background-color: ;
+	background-image: url() ; 
+	background-position: ;
+	background-repeat:  ;
+	background: ; 
+}
+#footer-container footer.wrapper{
+	background-color: ;
+	background-image: url() ; 
+	background-position: ;
+	background-repeat:  ;
+	background: ; 
+}
+
+#blog-description{
+	display: block; /* If you want to hide blog description on sidebar, set " display:none; "*/
+	color: ;
+}
+
+/* Global ---------- http://decolumn.com ---------- */
+
+
+/* Blog Infomation */
+
+#title{
+	font-size: 2.6em;
+	text-shadow: 0 1px 2px #cacaca
+}
+
+.side-column #blog-description{
+	line-height: 1.6em
+}
+
+#footer-container #copyright{
+	float: left;
+	width: 60%
+}
+
+#footer-container #generator{
+	float: right;
+	width: 35%;
+	text-align: right
+}
+
+
+/* link */
+a { 
+	color: #73B2A3;
+	text-decoration: none;  
+}
+a:visited { 
+	color: #73B2A3; 
+}
+a:hover { 
+	color: #9dc9ac; 
+	text-decoration: underline;
+}
+
+
+.menu-top-nav-container ul ul {
+	display: none
+}
+
+.menu-top-nav-container ul li:hover > ul {
+    display: block;
+}
+
+.page-nav a{
+	margin-left: 0;
+	background: #73B2A3;
+	padding: 10px 25px;
+}
+.page-nav a:visited { 
+
+}
+.page-nav a:hover { 
+	color: #fff;
+	background: #9dc9ac; 
+	text-decoration: none;
+}
+
+/* img */
+
+img.alignright {
+	float:right; 
+	margin:0 0 1em 1em
+}
+img.alignleft {
+	float:left; 
+	margin:0 1em 1em 0
+}
+img.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto
+}
+.alignright {
+	float:right; 
+}
+.alignleft {
+	float:left; 
+}
+.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto
+}
+
+.post img{
+	display: block
+}
+
+.wp-caption {
+	background: #f1f1f1;
+	border: 1px solid #e1e1e1;
+	font-size: small;
+	margin: 0.2em 0.8em;
+	padding: 0.5em 0.2em;
+	text-align: center;
+	line-height: 0.8em;
+	color: #CACACA;
+	text-shadow: 0 1px 2px #fff;
+}
+
+.wp-caption img{
+	margin: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size:x-small;
+    line-height:1.5;
+}
+
+/* check on deColumn0.8 */
+
+.gallery-caption{
+	
+}
+
+.bypostauthor{
+
+}
+
+
+
+/* input */
+
+input.text , textarea{
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 2px 5px;
+	line-height: 1.6em;
+}
+
+input.text:focus ,textarea:focus{
+	background: #e1ffe1;
+	color: #90402d;
+	text-shadow: 1px 1px 2px #ccc;
+	padding: 10px;
+}
+
+input#submit{
+	padding: 8px;
+}
+
+
+/* Menu for Pad View */
+
+@media only screen and (min-width: 480px) {
+
+ .menu-top-nav-container li {
+    float: left;
+    position: relative;
+ }
+
+ .menu-top-nav-container a {
+    display: block;
+    text-decoration: none;
+ }
+ .menu-top-nav-container ul ul {
+    display: none;
+    float: left;
+    position: absolute;
+    top: 3.5em;
+    left: 0;
+    z-index: 99999;
+    padding-left: 5px
+ }
+ .menu-top-nav-container ul ul ul {
+    left: 100%;
+    top: 0;
+ }
+ .menu-top-nav-container ul ul a {
+    background: #dedede;
+    min-width: 100px;
+    padding: 5px 25px;
+    display: block;
+    opacity: 0.8;
+ }
+ .menu-top-nav-container li:hover > a,
+ .menu-top-nav-container ul ul :hover > a {
+    background: #dedede;
+ }
+ .menu-top-nav-container ul ul a:hover {
+    background: #ccc;
+ }
+ .menu-top-nav-container ul li:hover > ul {
+    display: block;
+ }
+
+ #header-container .menu-top-nav-container ul ul a {
+    margin-right: -5px;
+    color: #fff;
+    text-shadow: none
+ }
+
+}
+
+
+
+/* Menu for Desktop View */
+
+@media only screen and (min-width: 768px) {
+
+ .menu-top-nav-container li {
+    float: left;
+    position: relative;
+ }
+
+ .menu-top-nav-container a {
+    display: block;
+    text-decoration: none;
+ }
+ .menu-top-nav-container ul ul {
+    display: none;
+    float: left;
+    position: absolute;
+    top: 2.3em;
+    left: 0;
+    z-index: 99999;
+    padding-left: 0
+ }
+ .menu-top-nav-container ul ul ul {
+    left: 100%;
+    top: 0;
+ }
+ .menu-top-nav-container ul ul a {
+    background: #dedede;
+    min-width: 100px;
+    padding: 5px 25px;
+    display: block;
+    opacity: 0.8;
+ }
+ .menu-top-nav-container li:hover > a,
+ .menu-top-nav-container ul ul :hover > a {
+    background: #dedede;
+ }
+ .menu-top-nav-container ul ul a:hover {
+    background: #ccc;
+ }
+ .menu-top-nav-container ul li:hover > ul {
+    display: block;
+ }
+
+ #header-container .menu-top-nav-container ul ul a {
+    margin-right: -5px;
+    color: #fff;
+    text-shadow: none
+ }
+
+}
+
+#footer-container .menu-bottom-nav-container ul.menu{
+	padding: 0;
+	margin: 0;
+}
+
+#footer-container .menu-bottom-nav-container li{
+ 	float: left;
+ 	list-style: none;
+ 	margin: 10px;
+ 	margin-left: 0
+}
+
+#footer-container .menu-bottom-nav-container li ul{
+ 	display: none
+}
+
+
+/* ---------- http://decolumn.com ---------- */
+
+
+/* Archive */
+
+.main-column .post{
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #f1f1f1;
+}
+
+.main-column .post h2.post-title{
+	margin-bottom: 5px;
+	text-shadow: 0 1px 2px #ccc
+}
+
+.main-column .post .wp-post-image{
+	float: left;
+	margin: 10px;
+	margin-left: 0;
+}
+
+.main-column .post .post-info{
+	font-size: x-small;
+	color: #cacaca
+}
+
+.main-column .post .post-info a{
+	color: #9dc9ac
+}
+
+.sticky{
+	background: #f1fff1;
+	padding: 5px 10px;
+	box-shadow: 0 1px 5px #CCC;
+	border-top: 5px solid #fff;
+}
+
+
+/* ---------- http://decolumn.com ---------- */
+
+/* Home */
+
+
+
+/* ---------- http://decolumn.com ---------- */
+
+
+/* Article */
+
+.main-column{
+
+}
+
+.post{
+
+}
+
+.post header{
+
+}
+
+.post footer{
+
+}
+
+.post-title{
+	text-shadow: #999 0 1px 2px;
+	margin-bottom: 0.6em
+}
+
+.post .excerpt{
+	color: #acacac;
+	font-size: smaller;
+	font-weight: 100;
+	display: ; /* if you want to hide excerpt in post, set " display:none " */
+}
+
+.post .excerpt p{
+	margin-bottom: 0.5em
+}
+
+.entry{
+	text-shadow: 1px 1px 2px #ccc
+}
+
+
+.entry p{
+
+}
+
+.entry p:hover{
+	color: #000;
+	text-shadow: 1px 1px 2px #999
+}
+
+.entry p:hover a:hover{
+	text-shadow: none
+}
+
+
+.post footer{
+	color: #ccc;
+	font-size: small;
+	margin: 2em 0;
+}
+
+.meta-column{
+	margin-bottom: 10px
+}
+
+.meta-column a{
+	margin: 0 5px;
+}
+
+
+/* Comment */
+
+#comment-area{
+	font-size: small
+}
+
+#comment-area .commentlist{
+	color: #ccc;
+	padding-left: 16px;
+}
+
+#comment-area .commentlist p{
+	color: #3b3635
+}
+
+#commentform label{
+	color: #ccc
+}
+
+#commentform input{
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 2px 5px;
+	line-height: 1.6em;
+}
+
+#commentform input:focus ,textarea:focus{
+	background: #e1ffe1;
+	color: #90402d;
+	text-shadow: 1px 1px 2px #ccc;
+	padding: 10px;
+}
+
+#commentform input#submit{
+	background: #9DC9AC;
+	padding: 8px 20px;
+	border: 1px solid #fff;
+	box-shadow: 0 2px 4px #ccc;
+	text-shadow: 0px 1px 2px #fff;
+}
+
+#commentform input#submit:hover{
+	background: #73B2A3;
+}
+
+#commentform p label{
+	display: inline
+}
+
+#commentform span.required{
+	display: inline;
+	color: #f60
+}
+
+#commentform input, #commentform textarea{
+	display: block;
+}
+
+.commentmetadata{
+	font-size: 11px;
+	text-align: right;
+	margin-top: -22px;
+	line-height: 11px;
+}
+
+li.comment{
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #e1e1e1;
+}
+
+.comment-awaiting-moderation{
+	background-color: #ffd;
+	color: #C09853;
+	padding: 1px;
+	border: 1px solid #f1f1dd
+}
+
+p.form-allowed-tags{
+	font-weight: 100;
+	color: #cacaca;
+	font-size: small;
+	line-height: 1.5
+}
+
+p.form-allowed-tags code{
+	font-weight: 300
+}
+
+/* Post - from single.php */
+
+.single .main-column{
+
+}
+
+.single .post{
+
+}
+
+.single .post p{
+	
+}
+
+.single .post header{
+
+}
+
+.single .post footer{
+
+}
+
+.single .post-title{
+	text-shadow: #999 0 1px 2px
+}
+
+.single .post .excerpt{
+	color: #cacaca;
+	font-size: small;
+	line-height: 1.6	
+}
+
+.single .post .entry{
+
+}
+
+.single .post footer{
+	color: #ccc;
+	font-size: small
+}
+
+.post-nav{
+	margin: 40px 0 0 0;
+	color: #ccc;
+	text-align: center;
+	padding: 4px 0;
+}
+
+.post-nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.post-nav li{
+	margin: 0
+}
+
+.post-nav li a{
+	padding: 10px;
+	font-size: small;
+	display: inline;
+	float: none;
+	margin: 0;
+	text-shadow: 0px 1px 2px #fff;
+	color: #cacaca
+}
+
+.post-nav ul li.left{
+	border-left: 2px solid #ccc;
+}
+
+.post-nav ul li.right{
+	border-right: 2px solid #ccc;
+}
+
+
+/* Page - from page.php */
+
+.page .main-column{
+
+}
+
+.page .post{
+
+}
+
+.page .post p{
+	
+}
+
+.page .post header{
+
+}
+
+.page .post footer{
+
+}
+
+.page .post-title{
+	text-shadow: #999 0 1px 2px
+}
+
+.page .post .excerpt{
+	color: #cacaca;
+	font-size: small;
+	line-height: 1.6
+}
+
+.page .post .entry{
+
+}
+
+.page .post footer{
+	color: #ccc;
+	font-size: small
+}
+
+
+/* Author - from author.php */
+
+#author-name{
+
+}
+
+.author-description{
+
+}
+
+.author-posts{
+	color: #ccc;
+	padding-left: 16px;
+}
+
+.author-posts li{
+	border-bottom: 1px dashed #f1f1f1;
+}
+
+.author-posts h4{
+	margin-bottom: 10px;
+}
+
+.author-posts .meta-column{
+	line-height: 1em;
+	font-size: small
+}
+
+
+/* 404 - from 404.php */
+
+.error404 #searchform input{
+	font-size: 2em;
+}
+
+
+/* ---------- http://decolumn.com ---------- */
+
+/* Searchform */
+#searchform{
+	position: relative;
+}
+
+#searchform #s{
+	width: 65%
+}
+
+
+/* Widget */
+
+#wp-calendar{
+	width: 100%
+}
+
+#wp-calendar td{
+	text-align: center;
+	vertical-align: middle
+}
+
+#wp-calendar td#prev{
+	text-align: left
+}
+
+#wp-calendar td#next{
+	text-align: right
+}
+
+.widget-title{
+
+}
+
+/* ---------- http://decolumn.com ---------- */
+
+#decolumn-mark{
+	font-weight: bolder
+}
