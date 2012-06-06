@@ -14,11 +14,11 @@
 	
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 	
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/decolumn-h5bp.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/decolumn-h5bp.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	
 	<!--[if lt IE 9]>
-	<script src="<?php bloginfo('template_directory'); ?>/js/libs/html5-3.4-respond-1.1.0.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/libs/html5-3.4-respond-1.1.0.min.js"></script>
 	<![endif]-->
 	
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />

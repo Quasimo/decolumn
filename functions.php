@@ -13,7 +13,11 @@ add_theme_support( 'post-thumbnails' );
 
 add_theme_support( 'automatic-feed-links' );
 
+add_editor_style('editor-style.css');  
+
+
 if ( ! isset( $content_width ) ) $content_width = 600;
 
 ?>
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : endif; ?>
+

@@ -1,0 +1,52 @@
+body {   
+    font-family: Helvetica, 'Helvetica Neue', Arial;   
+    color: #222;    
+    }   
+
+
+/* img */
+
+img.alignright {
+	float:right; 
+	margin:0 0 1em 1em
+}
+img.alignleft {
+	float:left; 
+	margin:0 1em 1em 0
+}
+img.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto
+}
+.alignright {
+	float:right; 
+}
+.alignleft {
+	float:left; 
+}
+.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto
+}
+
+.post img{
+	display: block
+}
+
+.wp-caption {
+	background: #f1f1f1;
+	border: 1px solid #e1e1e1;
+	font-size: small;
+	margin: 0.2em 0.8em;
+	padding: 0.5em 0.2em;
+	text-align: center;
+	line-height: 0.8em;
+	color: #CACACA;
+	text-shadow: 0 1px 2px #fff;
+}
+
+.wp-caption img{
+	margin: auto;
+}

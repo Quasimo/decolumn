@@ -5,7 +5,7 @@ Description: Focus on readability, a clean and awesome Wordpress blank theme. HT
 Version: 0.8
 Author: Lin Zhizhao
 Author URI: http://linz.im
-	
+License: GNU General Public License
 License URI: license.txt
 Tags: custom-menu, sticky-post, white, two-columns
 
@@ -15,7 +15,7 @@ Tags: custom-menu, sticky-post, white, two-columns
 
 body{
 	background-color: ;
-	background-image: url() ; 
+	background-image: ; 
 	background-position: ;
 	background-repeat:  ;
 	background: ; 
@@ -23,14 +23,14 @@ body{
 
 #header-container{
 	background-color: ; /* a color name (eg. red) or hex code (eg. #ff0000) here */
-	background-image: url() ; /* a color hex code (eg. #ff0000) here */
+	background-image: ; /* a color hex code (eg. #ff0000) here */
 	background-position: ;
 	background-repeat:  ; /* select one from: no-repeat repeat-x repeat-y repeat */
 	background: ; /* eg. background:black url(http://linz.im/bg.jpg) repeat-x top left */
 }
 #header-container header.wrapper{
 	background-color: ;
-	background-image: url() ; 
+	background-image: ; 
 	background-position: ;
 	background-repeat:  ;
 	background: ; 
@@ -38,7 +38,7 @@ body{
 #main-container{
 	color: ; /* a color name (eg. black) or hex code (eg. #000000) here */
 	background-color: ;
-	background-image: url() ; 
+	background-image: ; 
 	background-position: ;
 	background-repeat:  ;
 	background: ; 
@@ -47,7 +47,7 @@ body{
 	float: ; /* left or right or none */
 	width: ; /* eg. 60% , 600px */
 	background-color: ;
-	background-image: url() ; 
+	background-image: ; 
 	background-position: ;
 	background-repeat:  ;
 	background: ; 
@@ -56,21 +56,21 @@ body{
 	float: ; 
 	width: ; 
 	background-color: ;
-	background-image: url() ; 
+	background-image: ; 
 	background-position: ;
 	background-repeat:  ;
 	background: ; 
 } 
 #footer-container{
 	background-color: ;
-	background-image: url() ; 
+	background-image: ; 
 	background-position: ;
 	background-repeat:  ;
 	background: ; 
 }
 #footer-container footer.wrapper{
 	background-color: ;
-	background-image: url() ; 
+	background-image: ; 
 	background-position: ;
 	background-repeat:  ;
 	background: ; 

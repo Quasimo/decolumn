@@ -12,12 +12,6 @@
 		<h1 class="archive-title">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h1>
 		<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
 		<h1 class="archive-title">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h1>
-		<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-		<h1 class="archive-title">Archive for <?php the_time('F jS, Y'); ?></h1>
-		<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-		<h1 class="archive-title">Archive for <?php the_time('F, Y'); ?></h1>
-		<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-		<h1 class="archive-title">Archive for <?php the_time('Y'); ?></h1>
 		<?php /* If this is an author archive */ } elseif (is_author()) { ?>
 		<h1 class="archive-title">Author Archive</h1>
 		<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
@@ -40,13 +34,7 @@
 			</div>
 			
 			<div class="post-info clearfix">				
- 				<span class="post-time"><?php the_time('g:i a'); ?></span>
- 				<span class="sep sep1">-</span>
-				<span class="post-date"><a href="<?php echo get_day_link('', '', ''); ?>"><?php the_time('d'); ?></a></span>
- 				<span class="sep sep2">/</span>
-				<span class="post-month"><a href="<?php echo get_month_link('', ''); ?>"><?php the_time('m'); ?></a></span>
- 				<span class="sep sep3">/</span> 
-				<span class="post-year"><a href="<?php echo get_year_link(''); ?>"><?php the_time('Y'); ?></a></span>
+				<span class="post-date"><?php the_time(get_option('date_format')); ?></span>
  				<span class="sep sep4">-</span>  				
 				<span class="post-author"><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author_meta('display_name'); ?></a></span>
  				<span class="sep sep6">-</span>
@@ -68,7 +56,7 @@
 			</section>
 			
 			<footer>
-				<form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
+				<form method="get" id="searchform" action="<?php echo home_url() ; ?>/">
 					<input type="text" value="Search" onclick="value=''" name="s" id="s" />
 					<input type="submit" id="searchsubmit" value="Search" />
 				</form>

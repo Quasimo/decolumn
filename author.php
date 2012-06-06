@@ -19,11 +19,11 @@
             	<?php the_title(); ?>
             </a>
             </h4>
-            <div class="meta-column"><?php the_time('d M Y'); ?> in <?php the_category(' & ');?></div>
+            <div class="meta-column"><?php the_time(get_option('date_format')); ?> in <?php the_category(' & ');?></div>
         </li>
 
     	<?php endwhile; else: ?>
-        <li><?php _e('No posts by this author.'); ?></li>
+        <li><?php echo('No posts by this author.'); ?></li>
 
     	<?php endif; ?>
     	</ul>
