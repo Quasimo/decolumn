@@ -5,7 +5,7 @@ Description: Focus on readability, a clean and awesome Wordpress blank theme. HT
 Version: 0.8
 Author: Lin Zhizhao
 Author URI: http://linz.im
-License: GNU General Public License
+	
 License URI: license.txt
 Tags: custom-menu, sticky-post, white, two-columns
 
@@ -449,16 +449,6 @@ input#submit{
 .entry p{
 
 }
-
-.entry p:hover{
-	color: #000;
-	text-shadow: 1px 1px 2px #999
-}
-
-.entry p:hover a:hover{
-	text-shadow: none
-}
-
 
 .post footer{
 	color: #ccc;
