@@ -19,7 +19,7 @@
             	<?php the_title(); ?>
             </a>
             </h4>
-            <div class="meta-column"><?php the_time(get_option('date_format')); ?> in <?php the_category(' & ');?></div>
+            <div class="meta-column"><time datetime="<?php the_time('c'); ?>"><?php the_time(get_option('date_format')); ?></time> in <?php the_category(' & ');?></div>
         </li>
 
     	<?php endwhile; else: ?>

@@ -24,12 +24,10 @@
 			</div>
 			
 			<div class="post-info clearfix">
-			
-			
-							
- 				<span class="post-time"><?php the_time(); ?></span>
+
+ 				<span class="post-time"><time datetime="<?php the_time('H:i') ?>"><?php the_time(get_option('time_format')); ?></time></span>
  				<span class="sep sep1">-</span>
-				<span class="post-date"><?php the_time(get_option('date_format')); ?></span>
+				<span class="post-date"><time datetime="<?php the_time('c'); ?>"><?php the_time(get_option('date_format')); ?></time></span>
  				<span class="sep sep4">-</span>  				
 				<span class="post-author"><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author_meta('display_name'); ?></a></span>
  				<span class="sep sep6">-</span>

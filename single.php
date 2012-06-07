@@ -24,14 +24,15 @@
 				<?php edit_post_link(); ?>
 				
 			<!-- Post Meta Start -->
+			
+			
 
-				<div class="meta-column clearfix" id="post-time"><span class="meta-title">Posted:</span> <a href="<?php echo get_month_link('', ''); ?>" title="Archive for this month."><?php the_time('F j, Y'); ?></a> at <?php the_time('g:i a'); ?></div>
+				<div class="meta-column clearfix" id="post-time"><span class="meta-title">Posted:</span> <time datetime="<?php the_time('c'); ?>"><a href="<?php echo get_month_link('', ''); ?>" title="Archive for this month"><?php the_time(get_option('date_format')); ?></a> at <?php the_time(get_option('time_format')); ?></time></div>
 				<div class="meta-column clearfix" id="post-author"><span class="meta-title">Author:</span> <a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author_meta('display_name'); ?></a></div>
 				<div class="meta-column clearfix" id="post-categories"><span class="meta-title">Categories: </span> <?php the_category(' '); ?></div>				
 				<div class="meta-column clearfix" id="post-tags"><span class="meta-title">Tags:</span> <?php the_tags(' '); ?></div>
-				<div class="meta-column clearfix" id="post-tags">
-				<span class="meta-title">Tags:</span> 			
-				<?php the_meta(); ?>
+				<div class="meta-column clearfix" id="post-meta">
+				<span class="meta-title">Meta:</span> <?php the_meta(); ?>
 				</div>
 				
 			<!-- Post Meta End -->

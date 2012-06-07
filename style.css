@@ -2,7 +2,7 @@
 Theme Name: decolumn
 Theme URI: http://decolumn.com/
 Description: Focus on readability, a clean and awesome Wordpress blank theme. HTML5, CSS3, Responsive Web Design，optimized for mobile browsing (iPhone and iPad). 关注阅读体验，干净简洁的HTML5 WordPress模版框架，自适应屏幕，特别面向iPhone和iPad浏览。
-Version: 0.8
+Version: 0.9
 Author: Lin Zhizhao
 Author URI: http://linz.im
 License: GNU General Public License
@@ -175,6 +175,11 @@ img.aligncenter {
 }
 
 .entry img{
+	max-width: 100%;
+	height: auto;
+}
+
+.post-column img{
 	max-width: 100%;
 	height: auto;
 }

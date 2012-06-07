@@ -11,6 +11,15 @@
 		<?php /* If this is a category archive */ if (is_category()) { ?>
 		<h1 class="archive-title">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h1>
 		<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
+
+		<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
+		<h1 class="archive-title">Archive for <?php the_time(get_option('date_format')); ?></h1>
+		<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+		<h1 class="archive-title">Archive for <?php the_time('F, Y'); ?></h1>
+		<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+		<h1 class="archive-title">Archive for <?php the_time('Y'); ?></h1>
+		<?php /* If this is an author archive */ } elseif (is_author()) { ?>		
+		
 		<h1 class="archive-title">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h1>
 		<?php /* If this is an author archive */ } elseif (is_author()) { ?>
 		<h1 class="archive-title">Author Archive</h1>
@@ -34,7 +43,7 @@
 			</div>
 			
 			<div class="post-info clearfix">				
-				<span class="post-date"><?php the_time(get_option('date_format')); ?></span>
+				<span class="post-date"><time datetime="<?php the_time('c'); ?>"><?php the_time(get_option('date_format')); ?></time></span>
  				<span class="sep sep4">-</span>  				
 				<span class="post-author"><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author_meta('display_name'); ?></a></span>
  				<span class="sep sep6">-</span>

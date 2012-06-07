@@ -20,4 +20,3 @@ if ( ! isset( $content_width ) ) $content_width = 600;
 
 ?>
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : endif; ?>
-

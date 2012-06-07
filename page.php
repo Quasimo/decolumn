@@ -21,8 +21,8 @@
 			
 			<?php wp_link_pages(); ?>
 		
-				<div class="meta-column clearfix" id="post-tags">			
-				<?php the_meta(); ?>
+				<div class="meta-column clearfix" id="post-meta">
+				<span class="meta-title">Meta:</span> <?php the_meta(); ?>
 				</div>
 			
 			
